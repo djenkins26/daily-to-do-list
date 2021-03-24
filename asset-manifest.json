@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/daily-to-do-list/static/css/main.9d5b29c0.chunk.css",
+    "main.js": "/daily-to-do-list/static/js/main.2aea7934.chunk.js",
+    "main.js.map": "/daily-to-do-list/static/js/main.2aea7934.chunk.js.map",
+    "runtime-main.js": "/daily-to-do-list/static/js/runtime-main.b92b7292.js",
+    "runtime-main.js.map": "/daily-to-do-list/static/js/runtime-main.b92b7292.js.map",
+    "static/js/2.2e60087a.chunk.js": "/daily-to-do-list/static/js/2.2e60087a.chunk.js",
+    "static/js/2.2e60087a.chunk.js.map": "/daily-to-do-list/static/js/2.2e60087a.chunk.js.map",
+    "static/js/3.087ba01b.chunk.js": "/daily-to-do-list/static/js/3.087ba01b.chunk.js",
+    "static/js/3.087ba01b.chunk.js.map": "/daily-to-do-list/static/js/3.087ba01b.chunk.js.map",
+    "index.html": "/daily-to-do-list/index.html",
+    "static/css/main.9d5b29c0.chunk.css.map": "/daily-to-do-list/static/css/main.9d5b29c0.chunk.css.map",
+    "static/js/2.2e60087a.chunk.js.LICENSE.txt": "/daily-to-do-list/static/js/2.2e60087a.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/daily-to-do-list/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b92b7292.js",
+    "static/js/2.2e60087a.chunk.js",
+    "static/css/main.9d5b29c0.chunk.css",
+    "static/js/main.2aea7934.chunk.js"
+  ]
+}
