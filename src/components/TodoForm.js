@@ -12,6 +12,7 @@ function TodoForm(props) {
     inputRef.current.focus()
   })
 
+  // handle function
   const handleChange = e => {
     setInput(e.target.value);
   };
@@ -35,27 +36,27 @@ function TodoForm(props) {
         <>
         <input
           type='text'
-          placeholder='Update your todo'
+          placeholder='Update'
           value={input}
           name='text'
           className='to-do-input edit'
           onChange={handleChange}
           ref={inputRef}
         />
-        <button className='to-do-button edit'>Update todo</button>
+        <button className='to-do-button edit'>Update to-do</button>
         </>
       ) : (
       <>
         <input
           type='text'
-          placeholder='Add a todo'
+          placeholder='Add a to-do'
           value={input}
           name='text'
           className='to-do-input'
           onChange={handleChange}
           ref={inputRef}
         />
-        <button className='to-do-button'>Add todo</button>
+        <button className='to-do-button'>Add to-do</button>
       </>
     )}
 </form>

@@ -1,3 +1,1 @@
-readme info goes here
-
-installed react-icons
+Made a To-Do list using react.js. This appplication can create, show, update, and delete a to-do. Used CSS to style the page. Referenced https://github.com/briancodex/react-todo-app-v1 for some of the functionality. Installed react-icons for the edit and delete buttons. 

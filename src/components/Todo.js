@@ -17,17 +17,19 @@ function Todo({ todos, completeTodo, removeTodo, updateTodo }) {
       value:''
     })
   }
-
+  // if its true then return the todo form
   if (edit.id) {
-    return <TodoForm edit={edit} onSubmit={submitUpdate} />
+    return <TodoForm edit={edit} onSubmit={submitUpdate} />;
   }
 
+  // map through the todos pass in todo and index as the parameters
   return todos.map((todo, index) => (
+    // checking if todo is complete
   <div
     className={todo.isComplete ? 'todo-row complete' : 'todo-row'}
     key={index}
   >
-    <div key={todo.id} onClick={() => completeTodo(todo.id)}>
+  <div key={todo.id} onClick={() => completeTodo(todo.id)}>
       {todo.text}
     </div>
     <div className="icons">
@@ -35,12 +37,12 @@ function Todo({ todos, completeTodo, removeTodo, updateTodo }) {
       onClick={() => removeTodo(todo.id)}
       className='delete-icon'
       />
-      <TiEdit onClick={() => setEdit({ id: todo.id, vaalue: todo.text})}
-      className='delete-icon'/>
+      <TiEdit onClick={() => setEdit({ id: todo.id, value: todo.text})}
+      className='edit-icon'/>
 
       </div>
     </div>
   ));
 }
 
-export default Todo
+export default Todo;

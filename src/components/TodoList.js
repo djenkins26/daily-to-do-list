@@ -6,7 +6,7 @@ function TodoList() {
   // add state to the todos and set it, pass in an empty array
   const [todos, setTodos] = useState([]);
 
-  // add todos in the form
+  // add todos in the form, doesn't show multiple spacing
   const addTodo = todo => {
     if (!todo.text || /^\s*$/.test(todo.text)) {
       return;
@@ -14,10 +14,11 @@ function TodoList() {
 
   // new todos equal to an empty array pass in todos
   const newTodos = [todo, ...todos]
-
+  // set values to the new todos
   setTodos(newTodos);
 };
 
+// function to update todo
 const updateTodo = (todoId, newValue) => {
   if (!newValue.text || /^\s*$/.test(newValue.text)) {
     return;
@@ -26,15 +27,15 @@ const updateTodo = (todoId, newValue) => {
   setTodos(prev => prev.map(item => (item.id === todoId ? newValue : item))
   );
 };
-
+// function to remove todo
 const removeTodo = id => {
   const removeArr = [...todos].filter(todo => todo.id !== id)
 
-  // checking to see in the array the todo then remove it
+  // checking to see if the todo is in the array, then remove it
   setTodos(removeArr);
 };
 
-
+// arrow function for completeTodo
 const completeTodo = id => {
   let updatedTodos = todos.map(todo => {
     if (todo.id === id) {
@@ -44,7 +45,7 @@ const completeTodo = id => {
     return todo
   })
   setTodos(updatedTodos);
-}
+};
 
   return (
     <div>
